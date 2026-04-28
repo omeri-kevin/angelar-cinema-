@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Media } from '../models/media-model';
+import { MediaDetail } from '../media-detail/media-detail';
 @Component({
   selector: 'app-media-list',
-  imports: [],
+  imports: [MediaDetail],
   templateUrl: './media-list.html',
   styleUrl: './media-list.css',
 })

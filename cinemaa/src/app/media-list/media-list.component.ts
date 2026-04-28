@@ -6,8 +6,8 @@ import { Media } from '../models/media-model';
   selector: 'app-media-list',
   standalone: true, // Se stai usando le versioni recenti di Angular
   imports: [], // Qui aggiungerai i componenti figli più avanti
-  templateUrl: './media-list.component.html',
-  styleUrl: './media-list.component.css'
+  templateUrl: './media-list.html',
+  styleUrl: './media-list.css'
 })
 export class MediaListComponent {
 

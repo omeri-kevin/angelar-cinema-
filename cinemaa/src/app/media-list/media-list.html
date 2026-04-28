@@ -21,7 +21,7 @@
       <h2>Dettaglio Selezionato:</h2>
       <app-media-detail [media]="selectedElement"></app-media-detail>
       
-      <button (click)="selectedElement = undefined" style="margin-top: 10px;">Chiudi Dettaglio</button>
+      <button (click)="selectedElement = null" style="margin-top: 10px;">Chiudi Dettaglio</button>
     </div>
   } @else {
     <p><i>Seleziona un titolo dalla lista per vedere i dettagli.</i></p>
