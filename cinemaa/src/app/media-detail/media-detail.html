@@ -1,25 +1,21 @@
 @if (media) {
   <div class="detail-container">
     <div class="detail-card">
-      
       <div class="image-section">
-        <img [src]="media.imageUrl" alt="Locandina di {{ media.titolo }}">
+        <img [src]="media.imageUrl" alt="Locandina">
       </div>
-
       <div class="info-section">
         <h2>{{ media.titolo }}</h2>
         <p><strong>Regista:</strong> {{ media.regista }}</p>
         <p><strong>Anno:</strong> {{ media.anno }}</p>
-        <p><strong>Durata:</strong> {{ media.durata }} minuti</p>
-        <p><strong>Genere:</strong> {{ media.genere }}</p>
-        
+        <p><strong>Durata:</strong> {{ media.durata }} min</p>
         <div class="trama-box">
           <h3>Trama</h3>
           <p>{{ media.trama }}</p>
         </div>
       </div>
-
+    </div>
   </div>
 } @else {
-  <p>Seleziona un media per vedere i dettagli.</p>
+  <p>Caricamento dettagli...</p>
 }
